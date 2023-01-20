@@ -1,0 +1,91 @@
+.skills{
+    margin-top: 120px;
+    &__title{
+        text-align: center;
+        @include before_circle-center;
+        padding-top: 7px;
+        padding-left: 23px;
+    }
+    &__subtitle{
+        margin-bottom: 60px;
+        text-align: center;
+        position: relative;
+        @include before_line-centre;
+        padding-bottom: 25px;
+    }
+    &__wrapper{
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 270px);
+        justify-content: center;
+        gap: 13px;
+        grid-auto-rows: auto;
+    }
+    &__item{
+        padding: 30px;
+        border: 1px solid #fff;
+        background-color: #112240;
+        &-img{
+            height: 65px;
+            margin-bottom: 20px;
+            img{
+                height: 100%;
+                max-width: 160px;
+                
+            }
+        }
+        &-title{
+            margin-bottom: 15px;
+        }
+        &-text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__block{
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+        grid-template-rows: repeat(auto-fill, 70px);
+        justify-content: center;
+        gap:30px 45px;
+        &-item{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+        }
+        &-title{
+            position: relative;
+            padding-left: 14px;
+            padding-top: 8px;
+            @include before_circle;
+            margin-bottom: 25px;
+        }
+        &-slide{
+        grid-column: 1 / 3;
+        height: 14px;
+        background: #112240;
+        border-radius: 4px;
+        position: relative;
+        z-index: -1;
+        }
+        &-percent{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            padding-top: 8px;
+            justify-self: end;
+        }
+        &-slideins{ 
+            position: absolute;
+            background: $maincolor;
+            left: 0;
+            top: 0;
+            height: 100%;
+            border-radius: 4px;
+            
+        }
+    }
+
+}

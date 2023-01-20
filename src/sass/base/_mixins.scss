@@ -1,0 +1,72 @@
+@mixin before_circle{
+    &::before{
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $maincolor;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+@mixin before_circle-center{
+    &::before{
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $maincolor;
+        left: 49%;
+        transform: translateX(-50%);
+        top: 0;
+        z-index: -1;
+    }
+}
+
+
+@mixin before_line-left{
+    &::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background: $maincolor;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+@mixin before_line-centre{
+    &::after{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background: $maincolor;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+@mixin after_icon{
+    &::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background: $maincolor;
+        left: 50%;
+        transform: translateX(-30px);
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+
+

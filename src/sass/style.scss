@@ -1,8 +1,78 @@
-@import 'libs/bootstrap-reboot.min';
+@import 'libs/nullstyle';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../icons/');
+    src:  url('../icons/#iefix') format('embedded-opentype'),
+      url('../icons/fonts/icomoon.ttf?poee3m') format('truetype'),
+      url('../icons/fonts/icomoon.woff?poee3m') format('woff'),
+      url('../icons/fonts/icomoon.svg?poee3m#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-github:before {
+    content: "\e900";
+  }
+  .icon-facebook:before {
+    content: "\e901";
+  }
+  .icon-instagram:before {
+    content: "\e902";
+  }
 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+body{
+    color: #ffffff;
+    background-color: #0a192f;
+}
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+}
+@import 'blocks/title';
+@import 'blocks/btn';
+@import 'blocks/promo';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/aboutme';
+@import 'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price-list';
+@import 'blocks/contacts';
+@import 'blocks/police-conf';
+
+
+
+
+
+
+@import 'blocks/media';
+

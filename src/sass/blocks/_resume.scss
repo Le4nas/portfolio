@@ -1,0 +1,89 @@
+.resume{
+    margin-top: 120px;
+    
+    &__title{
+        text-align: center;
+        padding-left: 7px;
+        padding-top: 6px;
+        @include before_circle-center;
+    }
+    &__subtitle{
+        text-align: center;
+        position: relative;
+        @include before_line-centre;
+        padding-bottom: 25px;
+    }
+    &__wrapper{
+        margin-top: 65px;
+        padding: 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column{
+        &-title{
+            position: relative;
+            padding-left: 50px;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $maincolor;
+                border-radius: 100%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul{
+            li{
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 9px);
+                    position: absolute;
+                    top: -9px;
+                    left: 7px;
+                    background-color: #fff;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 43px;
+                    left: 7px;
+                    top: 59px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &__item{
+        padding-top: 45px;
+        padding-left: 50px;
+        &-head{
+            padding-left: 60px;
+        }
+        &-body{
+            margin-top: 12px;
+        }
+        &-icon{
+            position: absolute;
+            top: 42px;
+            left: 50px;
+            @include before_circle;
+            img{
+                position: absolute;
+                left: 17px;
+                top: 14px
+            }
+        }
+        &-body{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

@@ -1,0 +1,206 @@
+@media (max-width: 1370px) {
+    .portfolio{
+        &__wrapper{
+            margin-top: 60px;
+            display: grid;
+            grid-template: repeat(auto-fill, 280px) / repeat(auto-fill, 280px);
+            grid-auto-rows: 280px;
+            gap: 10px;
+            justify-content: center;
+            .vertical, .horizontal{
+                grid: unset;
+            }
+        }
+        .portfolio{
+            margin-top: 120px;
+            &__wrapper{
+                gap: 16px;
+                .vertical, .horizontal{
+                    grid-row: unset;
+                    grid-column: unset;
+                }
+                
+            }
+            }
+    }
+
+    .sidepanel{
+        left: 15px;
+    } 
+    .sidepanel{
+        display: none;
+    }  
+}
+
+@media (max-width: 1100px) {
+    .aboutme{
+        margin-top: 60px;
+        &__container{
+            display: grid;
+            grid-template-columns: minmax(250px, 400px) minmax(430px, 1fr) ;
+            max-width: 1040px;
+            grid-template-rows: 1fr;
+            justify-content: start;
+            gap: 40px;
+        }
+        &__tech{
+            position: relative;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 260px) );
+            justify-content: space-between;
+            gap: 20px;  
+        }
+    }
+
+    .contacts{
+        margin-top: 120px;
+        padding-bottom: 90px;
+        &__wrapper{
+            padding: 0;
+            display: grid;
+            grid-template-columns: minmax(200px, 400px) 1fr;
+            column-gap: 15px; 
+            justify-content: space-between;
+        }
+        &__form{
+            grid-template: 45px 45px 190px/ repeat(auto-fill, minmax(280px, 1fr));
+            justify-content: space-between;
+            column-gap: 105px;
+        }
+        &__textarea{
+            grid-column: 1 / 2;
+            position: relative;
+            transition: all .3s;
+        }
+        &__triger{
+            grid-column: 1 / 2;
+            grid-template-columns: repeat(1, auto);
+            row-gap: 15px;
+        }
+    }  
+
+    .resume{
+        &__wrapper{
+            margin-top: 65px;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(200px, 425px));
+            justify-content: center;
+            column-gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu{
+        &__block{
+            overflow: scroll;
+        }
+    }
+    .promo{
+        background: url('../img/bgmain.jpg') 68%/cover no-repeat;
+    }
+    .contacts{
+        &__photo{
+            display: none;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(auto-fill, minmax(300px, 560px));
+            justify-content: center;
+        }
+    }
+    .aboutme{
+        
+        &__container{
+            display: grid;
+            grid-template-columns: minmax(200px, 300px) minmax(360px, 1fr) ;
+            max-width: 1040px;
+            justify-content: start;
+            gap: 40px;
+        }
+        &__tech{
+            position: relative;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr) );
+            justify-content: space-between;
+            gap: 20px;  
+        }
+    }
+    .resume{
+        &__wrapper{
+            column-gap: 30px;
+        }
+    }
+    .price-list{
+        margin-top: 60px;
+        &__wrapper{
+            margin-top: 60px;
+            display: grid;
+            grid-template: repeat(3, minmax(45px, auto)) / repeat(auto-fill, minmax(300px, 366px)) ;
+            grid-auto-rows: minmax(45px, auto);
+            justify-content: center;
+            column-gap: 15px;
+            row-gap: 25px;
+        }
+    }
+}
+
+
+    .title{
+        font-size: 26px;
+        line-height: 40px;
+        &__fz14{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+        }
+        &_fz16{
+            position: relative;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__fz20{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &_fz48{
+            font-size: 36px;
+            line-height: 50px;
+        }
+        &-location{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+
+@media (max-width: 576px) {
+    .aboutme{
+        margin-top: 60px;
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 1040px;
+            grid-template-rows: 340px ;
+            justify-content: start;
+            gap: 40px;
+        }
+        &__tech{
+            position: relative;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 1fr);
+            justify-content: space-between;
+            gap: 20px;  
+        }
+    }
+    .resume{
+        &__wrapper{
+            grid-template-columns: repeat(1, minmax(200px, 425px));
+            gap: 30px;
+        }
+    }
+}

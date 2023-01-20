@@ -1,0 +1,25 @@
+.sidepanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+    position: fixed;
+    z-index: 2;
+    left: 50px;
+    bottom: 100px;
+    &__divideer{
+        width: 2px;
+        height: 70px;
+        background-color: #fff;
+    }
+    &__link{
+        transform: rotate(90deg);
+        font-size: 20px;
+        color: #ffffff;
+        transition: all .3s;
+        &:hover{
+            color: $maincolor;
+        }
+    }          
+}
